@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 export const SortByBarContainer = styled.div`
   display: flex;
-  width: 450px;
+  width: 420px;
   height: 40px;
   margin-bottom: 2rem;
+  @media (max-width: 548px) {
+    width: 300px;
+    height: 80px;
+  }
 `;
 
 export const SortByButton = styled.button`
-  width: 150px;
+  width: 140px;
   border: none;
   border-bottom: 2px solid white;
   font-family: inherit;
@@ -19,5 +23,8 @@ export const SortByButton = styled.button`
   opacity: ${({ selected }) => (selected ? "1" : "0.5")};
   &:hover {
     font-size: 18px;
+  }
+  @media (max-width: 548px) {
+    width: 100px;
   }
 `;

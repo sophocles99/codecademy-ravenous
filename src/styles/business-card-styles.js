@@ -1,17 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
-  width: 250px;
+  width: 248px;
   margin: 2rem;
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  @media (max-width: 936px) {
+    width: 300px;
+  }
 `;
 
 export const Image = styled.img`
-  width: 250px;
-  height: 250px;
+  width: 248px;
+  height: 248px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  @media (max-width: 936px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const Text = styled.div`

@@ -20,7 +20,7 @@ export const SearchFormContainer = styled.section`
 `;
 
 export const SearchButton = styled.button`
-  width: 150px;
+  width: 120px;
   height: 50px;
   border: none;
   border-radius: 4px;

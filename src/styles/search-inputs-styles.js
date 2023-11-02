@@ -4,6 +4,12 @@ export const SearchInputsContainer = styled.div`
   display: flex;
   margin-bottom: 2rem;
   gap: 2rem;
+  @media (max-width: 936px) {
+    flex-direction: column;
+  }
+  @media (max-width: 548px) {
+    width: 300px;
+  }
 `;
 
 export const SearchLabel = styled.label`
@@ -15,7 +21,7 @@ export const SearchLabel = styled.label`
 `;
 
 export const SearchInput = styled.input`
-  width: 400px;
+  width: 420px;
   height: 40px;
   padding: 0 1rem;
   border: none;
@@ -28,5 +34,8 @@ export const SearchInput = styled.input`
   &:focus,
   &:active {
     border: 2px solid var(--accent-colour);
+  }
+  @media (max-width: 548px) {
+    width: 300px;
   }
 `;
