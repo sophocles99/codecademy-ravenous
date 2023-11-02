@@ -9,7 +9,7 @@ import {
   Category,
   Rating,
   Reviews,
-} from "../styles/business-card-styles";
+} from "./styles/BusinessCard.styled";
 
 const BusinessCard = ({ business }) => {
   return (

@@ -3,9 +3,8 @@ import SortByBar from "./SortByBar";
 import SearchInputs from "./SearchInputs";
 import {
   SearchButton,
-  SearchFormBackground,
   SearchFormContainer,
-} from "../styles/search-form-styles";
+} from "./styles/SearchForm.styled";
 
 const sortByOptions = [
   { name: "Best Match", value: "best_match" },
@@ -20,7 +19,6 @@ const SearchForm = () => {
 
   return (
     <>
-      <SearchFormBackground />
       <SearchFormContainer>
         <SortByBar
           sortByOptions={sortByOptions}

@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const SearchFormBackground = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 450px;
-  background-image: url("../../public/essential-spices.jpg");
-  background-size: cover;
-  filter: brightness(40%);
-  z-index: -1;
-`;
-
 export const SearchFormContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -17,6 +7,11 @@ export const SearchFormContainer = styled.section`
   align-items: center;
   width: 100%;
   height: 450px;
+  background-image: url("/background_search_desktop.jpg");
+  background-size: cover;
+  @media (max-width: 548px) {
+    background-image: url("/background_search_mobile.jpg");
+  }
 `;
 
 export const SearchButton = styled.button`
@@ -29,6 +24,9 @@ export const SearchButton = styled.button`
   font-weight: bold;
   background-color: var(--accent-colour);
   color: white;
+  &:hover {
+    font-size: 20px;
+  }
   &:active {
     transform: scale(0.98);
   }

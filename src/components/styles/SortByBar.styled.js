@@ -20,7 +20,7 @@ export const SortByButton = styled.button`
   font-weight: bold;
   color: white;
   background-color: transparent;
-  opacity: ${({ selected }) => (selected ? "1" : "0.5")};
+  opacity: ${({ selected }) => (selected ? "1" : "0.7")};
   &:hover {
     font-size: 18px;
   }

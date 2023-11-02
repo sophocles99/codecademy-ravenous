@@ -1,4 +1,4 @@
-import { SortByButton, SortByBarContainer } from "../styles/sort-by-bar-styles";
+import { SortByButton, SortByBarContainer } from "./styles/SortByBar.styled";
 
 const SortByBar = ({ sortByOptions, sortBy, setSortBy }) => {
   return (

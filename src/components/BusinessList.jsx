@@ -1,4 +1,4 @@
-import { BusinessListContainer } from "../styles/business-list-styles";
+import { BusinessListContainer } from "./styles/BusinessList.styled";
 import BusinessCard from "./BusinessCard";
 
 // ** currently hard-coded **

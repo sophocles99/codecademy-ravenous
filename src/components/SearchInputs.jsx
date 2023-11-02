@@ -2,7 +2,7 @@ import {
   SearchInputsContainer,
   SearchInput,
   SearchLabel,
-} from "../styles/search-inputs-styles";
+} from "./styles/SearchInputs.styled";
 
 const SearchInputs = ({ term, setTerm, location, setLocation }) => {
   return (
