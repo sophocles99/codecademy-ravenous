@@ -1,7 +1,11 @@
 import { useState } from "react";
 import SortByBar from "./SortByBar";
 import SearchInputs from "./SearchInputs";
-import { SearchFormContainer } from "../styles/search-form-styles";
+import {
+  SearchButton,
+  SearchFormBackground,
+  SearchFormContainer,
+} from "../styles/search-form-styles";
 
 const sortByOptions = [
   { name: "Best Match", value: "best_match" },
@@ -15,20 +19,23 @@ const SearchForm = () => {
   const [location, setLocation] = useState("");
 
   return (
-    <SearchFormContainer>
-      <SortByBar
-        sortByOptions={sortByOptions}
-        sortBy={sortBy}
-        setSortBy={setSortBy}
-      />
-      <SearchInputs
-        term={term}
-        setTerm={setTerm}
-        location={location}
-        setLocation={setLocation}
-      />
-      {/* <Button /> */}
-    </SearchFormContainer>
+    <>
+      <SearchFormBackground />
+      <SearchFormContainer>
+        <SortByBar
+          sortByOptions={sortByOptions}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
+        />
+        <SearchInputs
+          term={term}
+          setTerm={setTerm}
+          location={location}
+          setLocation={setLocation}
+        />
+        <SearchButton>Let's Go</SearchButton>
+      </SearchFormContainer>
+    </>
   );
 };
 

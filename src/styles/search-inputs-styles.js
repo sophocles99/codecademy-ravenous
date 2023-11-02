@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SearchInputsContainer = styled.div`
   display: flex;
-  margin-top: 1rem;
+  margin-bottom: 2rem;
   gap: 2rem;
 `;
 
@@ -27,6 +27,6 @@ export const SearchInput = styled.input`
   }
   &:focus,
   &:active {
-    border: 2px solid #999;
+    border: 2px solid var(--accent-colour);
   }
 `;

@@ -4,6 +4,7 @@ export const SortByBarContainer = styled.div`
   display: flex;
   width: 450px;
   height: 40px;
+  margin-bottom: 2rem;
 `;
 
 export const SortByButton = styled.button`
