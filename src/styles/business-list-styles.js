@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const BusinessListContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   max-width: 960px;

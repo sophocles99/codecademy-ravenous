@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { Container } from "../styles/business-list-styles";
+import { BusinessListContainer } from "../styles/business-list-styles";
 import BusinessCard from "./BusinessCard";
 
 // ** currently hard-coded **
@@ -18,11 +17,11 @@ const businesses = new Array(8).fill(business);
 
 const BusinessList = () => {
   return (
-    <Container>
+    <BusinessListContainer>
       {businesses.map((business, index) => (
         <BusinessCard business={business} key={index}/>
       ))}
-    </Container>
+    </BusinessListContainer>
   );
 };
 
