@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-export const SortByButtonContainer = styled.div`
+export const SortByBarContainer = styled.div`
   display: flex;
   width: 450px;
-  height: 50px;
+  height: 40px;
 `;
 
 export const SortByButton = styled.button`
   width: 150px;
   border: none;
   border-bottom: 2px solid white;
-  font: quicksand;
+  font-family: inherit;
   font-size: ${({ selected }) => (selected ? "18px" : "16px")};
   font-weight: bold;
   color: white;

@@ -1,11 +1,11 @@
 import "./App.css";
 import BusinessList from "./components/BusinessList";
-import SearchBar from "./components/SearchBar";
+import SearchForm from "./components/SearchForm";
 
 function App() {
   return (
     <>
-      <SearchBar></SearchBar>
+      <SearchForm />
       <BusinessList />
     </>
   );
