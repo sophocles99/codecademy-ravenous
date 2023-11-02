@@ -1,10 +1,10 @@
-import Business from "./components/Business";
 import "./App.css";
+import BusinessList from "./components/BusinessList";
 
 function App() {
   return (
     <>
-      <Business />
+      <BusinessList />
     </>
   );
 }
