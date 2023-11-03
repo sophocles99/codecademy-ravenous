@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 248px;
   margin: 2rem;
   border-radius: 4px;
@@ -13,6 +16,7 @@ export const Container = styled.article`
 export const Image = styled.img`
   width: 248px;
   height: 248px;
+  object-fit: cover;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   @media (max-width: 936px) {

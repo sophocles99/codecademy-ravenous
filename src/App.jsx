@@ -3,12 +3,14 @@ import BusinessList from "./components/BusinessList";
 import Header from "./components/Header";
 import SearchForm from "./components/SearchForm";
 
+import businesses from "./data/businesses.js";
+
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
       <SearchForm />
-      <BusinessList />
+      <BusinessList businesses={businesses} />
     </>
   );
 }

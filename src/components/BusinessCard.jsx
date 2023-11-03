@@ -16,7 +16,7 @@ const BusinessCard = ({ business }) => {
     <Container>
       <Image src={business.imageSrc} alt={business.name} />
       <Text>
-        <Name>MarginOtto Pizeria</Name>
+        <Name>{business.name}</Name>
         <Details>
           <Address>
             <p>{business.address}</p>
