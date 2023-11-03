@@ -15,7 +15,6 @@ const SearchInputs = ({ term, setTerm, location, setLocation }) => {
           placeholder="Search businesses"
           value={term}
           onChange={(e) => {
-            console.log(e.target.value);
             setTerm(e.target.value);
           }}
         />
@@ -28,7 +27,6 @@ const SearchInputs = ({ term, setTerm, location, setLocation }) => {
           placeholder="Location"
           value={location}
           onChange={(e) => {
-            console.log(e.target.value);
             setLocation(e.target.value);
           }}
         />
